@@ -212,6 +212,76 @@ body {
   margin-bottom: .5em;
 }
 
+/* Creating new contact page */
+.add-h2 {
+  margin: 3em;
+  font-family: var(--header-font);
+}
+
+.required {
+  color:red
+}
+
+.form {
+  max-width: 40%;
+  margin-left: 2em;
+  display: flex;
+  flex-direction: column;
+  background-color: #ff6f0060;
+  padding: 2em;
+  border-radius: .3em;
+  min-height: 40vh;
+  font-family: var(--main-font);
+  font-size: 1.2em;
+}
+
+.form > label {
+  margin-top: 1em;
+}
+
+.form > input {
+  font-family: var(--main-font);
+  width: 50%;
+  font-size: 1em;
+  padding: 0.4em;
+}
+
+.btn-submit {
+  width: 25%;
+  margin-top: 1.5em;
+  font-size: 1em;
+  padding: 0.3em;
+  background-color: #4488d6c7;
+  cursor: pointer;
+  color: #fff;
+  transition: 1s;
+}
+
+.btn-submit:hover {
+  background-color: #3386e6;
+}
+
+/* Form-Success Page */
+#success {
+ margin: 10em 2em;
+}
+
+.success-h1 {
+  font-family: var(--header-font);
+  line-height: 1.2em;
+  margin-bottom: 2em;
+}
+
+#success > a {
+  font-family: var(--main-font);
+  font-size: 1.2em;
+  border-bottom: #4488d6 2px solid;
+}
+
+#success > a:hover {
+  color:#4488d6;
+}
+
 
 
 

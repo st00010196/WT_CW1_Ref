@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Melegram Contacts</title>
+  <title>Melegram</title>
   <link rel="stylesheet" href="public/css/style.css">
 </head>
 <body>
@@ -20,32 +20,20 @@
     </nav>
   </header>
 
-  <main id="contacts">
-    <div class="names">
-      <h2 class="contacts-h2">My Contacts</h2>
-      <ul>
-        <li class="name">Bob⚽</li>
-        <li class="name">Darling❤</li>
-        <li class="name">Ex🤢</li>
-        <li class="name">Brother💪</li>
-        <li class="name">Sister😁</li>
-        <li class="name">Teacher📚</li>
-      </ul>
-    </div>
-    
-    <div class="chat-box">
-      <ul class="chat-history">
-        <li class="date">24 June</li>
-        <li class="received">Brother, how is it going?</li>
-        <li class="sent">Hey! Cool, what are you doing?</li>
-      </ul>
-      <div class="message">
-        <textarea name="" id="message-text" cols="50" rows="2"></textarea>
-        <button class="btn-send">Send</button>
-      </div>
-    </div>
-  </main>
+  <main>
+    <h2 class="add-h2">Form for adding a new contact</h2>
+    <form action="form_submit.html" class="form">
+      <label for="name">Name<span class="required">*</span></label>
+      <input type="text" minlength="2" class="tbx" id="name">
+      
+      <label for="phone">Phone Number<span class="required">*</span></label>
+      <input type="tel" name="phone" id="phone" pattern="[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}"> <small>Format: 99-123-45-67</small>
 
+      <label for="address">Address</label>
+      <input type="text" name="address" id="address" class="tbx">
+      <button class="btn-submit">Add</button>
+    </form>
+  </main>
   <footer class="footer">
     <p class="footer-p">This website was created to fulfill Web Technology module’s requirements and does not
       represent an actual company or service</p>
