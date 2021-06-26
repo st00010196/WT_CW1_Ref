@@ -1,0 +1,110 @@
+/* FOR HEADING */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* FOR PARAGRAPHS AND LONG TEXTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto&display=swap');
+
+/* FOR THE LOGO */
+@import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@700&display=swap');
+
+
+:root {
+  --header-font: 'Poppins', sans-serif;;
+  --main-font: 'Roboto', sans-serif;
+}
+
+/* General attributes */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background: src;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Styling header and index.html */
+.header-nav {
+  display: flex;
+  text-transform: uppercase;
+  margin: 1.5em auto 1.5em 2.1em;
+}
+
+.header-h2 > a {
+  color:#ff6f00;
+  font-family: 'Charmonman', cursive;
+}
+
+.header-ul {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.header-li a {
+  color: #000;
+  margin-left: 1.5em;
+  font-family: var(--header-font);
+  font-size: 1.1em;
+}
+
+.header-li a:hover {
+  color:#ff6f00;
+}
+
+.main-article {
+  margin-left: 2em;
+  margin-top: 17em;
+}
+
+.main-h1 {
+  width: 45%;
+  font-family: var(--header-font);
+  font-size: 2em;
+  text-transform: uppercase;
+  line-height: 1.2em;
+  margin-bottom: 1em;
+}
+
+.main-p {
+  width: 60%;
+  font-family: var(--main-font);
+  font-size: 1.2em;
+  margin-bottom: 2em;
+}
+
+.buttons {
+  width: 60%;
+  text-align: center;
+}
+
+.btn-start, .btn-more {
+  font-family: var(--main-font);
+  font-size: 1em;
+  padding: .6em;
+  margin: .8em;
+  border-radius: .8em;
+  border: 2px solid #000;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #000;
+  transition: .5s ease;
+}
+
+.btn-start {
+  background-color: #ff6f00;
+  color: #fff;
+}
+
+.btn-start:hover, .btn-more:hover{
+  background-color: #4488d6;
+  color: #fff;
+}
+
+
+
