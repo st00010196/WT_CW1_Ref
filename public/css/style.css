@@ -1,16 +1,15 @@
 /* FOR HEADING */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
 /* FOR PARAGRAPHS AND LONG TEXTS */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto&display=swap");
 
 /* FOR THE LOGO */
-@import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Charmonman:wght@700&display=swap");
 
 :root {
-  --header-font: 'Poppins', sans-serif;;
-  --main-font: 'Roboto', sans-serif;
+  --header-font: "Poppins", sans-serif;
+  --main-font: "Roboto", sans-serif;
 }
 
 /* General attributes */
@@ -36,8 +35,8 @@ body {
 }
 
 .header-h2 > a {
-  color:#ff6f00;
-  font-family: 'Charmonman', cursive;
+  color: #ff6f00;
+  font-family: "Charmonman", cursive;
 }
 
 .header-ul {
@@ -54,7 +53,7 @@ body {
 }
 
 .header-li a:hover {
-  color:#ff6f00;
+  color: #ff6f00;
 }
 
 .main-article {
@@ -84,25 +83,27 @@ body {
   text-align: center;
 }
 
-.btn-start, .btn-more {
+.start,
+.more {
   font-family: var(--main-font);
   font-size: 1em;
-  padding: .6em;
-  margin: .8em;
-  border-radius: .8em;
+  padding: 0.6em;
+  margin: 0.8em;
+  border-radius: 0.8em;
   border: 2px solid #000;
   cursor: pointer;
   text-transform: uppercase;
   color: #000;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 
-.btn-start {
+.start {
   background-color: #ff6f00;
   color: #fff;
 }
 
-.btn-start:hover, .btn-more:hover{
+.start:hover,
+.more:hover {
   background-color: #4488d6;
   color: #fff;
 }
@@ -113,11 +114,10 @@ body {
 
 .footer-p {
   position: absolute;
-  bottom:1em;
+  bottom: 1em;
   left: 30%;
   font-family: var(--main-font);
 }
-
 
 /* Contacts page */
 #contacts {
@@ -127,7 +127,8 @@ body {
   align-items: center;
 }
 
-.names, .chat-box {
+.names,
+.chat-box {
   width: 100%;
 }
 
@@ -141,13 +142,13 @@ body {
   width: 80%;
   border-bottom: 1px solid #ff6f00;
   font-family: var(--main-font);
-  padding: 0.5em 0;
+  padding: 0.5em 0.5em;
   font-size: 1.2em;
   cursor: pointer;
 }
 
 .name:hover {
-  background-color: #4488d63b;
+  background-color: #4488d681;
 }
 
 .chat-history {
@@ -189,10 +190,11 @@ body {
   background-color: #ff6f00b7;
 }
 
-.received, .sent {
+.received,
+.sent {
   width: 60%;
   border: 2px solid #000;
-  border-radius: .5em;
+  border-radius: 0.5em;
   padding: 0.2em 0.4em;
   margin: 0.3em;
 }
@@ -209,7 +211,11 @@ body {
 .date {
   font-style: italic;
   text-align: center;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
+}
+
+.active {
+  background-color: #4488d63b;
 }
 
 /* Creating new contact page */
@@ -219,7 +225,7 @@ body {
 }
 
 .required {
-  color:red
+  color: red;
 }
 
 .form {
@@ -229,7 +235,7 @@ body {
   flex-direction: column;
   background-color: #ff6f0060;
   padding: 2em;
-  border-radius: .3em;
+  border-radius: 0.3em;
   min-height: 40vh;
   font-family: var(--main-font);
   font-size: 1.2em;
@@ -263,7 +269,7 @@ body {
 
 /* Form-Success Page */
 #success {
- margin: 10em 2em;
+  margin: 10em 2em;
 }
 
 .success-h1 {
@@ -279,10 +285,60 @@ body {
 }
 
 #success > a:hover {
-  color:#4488d6;
+  color: #4488d6;
 }
 
+/* About page */
 
+.about-h1 {
+  font-family: var(--header-font);
+  text-align: start;
+}
 
+.article {
+  margin-top: 3em;
+}
 
+.about {
+  margin: 2em 2em 2em 2em;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
 
+.article-h2 {
+  font-family: var(--header-font);
+  width: 40%;
+  text-align: start;
+  margin-left: auto;
+}
+
+.article-p {
+  font-family: var(--main-font);
+  width: 40%;
+  line-height: 2em;
+  margin-left: auto;
+  text-align: start;
+}
+
+.wrapper {
+  background-image: url("https://images.unsplash.com/photo-1533299150403-a196e9ae00ea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1083&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+}
+
+.under-wrapper {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.article-footer {
+  position: relative;
+  color: #fff;
+  text-align: start;
+  width: 60%;
+}
