@@ -342,3 +342,73 @@ body {
   text-align: start;
   width: 60%;
 }
+
+.price-main {
+  display: flex;
+  justify-content: center;
+  margin-top: 3em;
+}
+
+.price-box {
+  border-radius: 0.4em;
+}
+
+.premium {
+  background-color: rgb(98, 149, 226);
+}
+
+.basic {
+  background-color: rgb(245, 141, 67);
+  margin-top: 4em;
+}
+
+.gold {
+  margin-top: 2em;
+  background-color: rgb(219, 197, 69);
+}
+
+.price-h2 {
+  padding: 0.5em 1em;
+  font-family: var(--header-font);
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.price-li {
+  padding: 0.5em 1em;
+  font-family: var(--main-font);
+  margin-top: 1em;
+  padding-bottom: 0.3em;
+  border-bottom: 2px solid #466b1b81;
+}
+
+.price {
+  font-size: 0.6em;
+  color: rgba(110, 18, 18, 0.842);
+}
+
+.suggestion {
+  text-align: center;
+  font-size: 1.3em;
+  background-color: rgba(197, 60, 42, 0.815);
+  padding: 0.3em 0;
+  width: 100%;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: var(--header-font);
+}
+
+.btn-get {
+  padding: 0.3em;
+  margin: 1em;
+  font-size: 0.9em;
+  width: 80px;
+  background-color: #ffffff6b;
+  cursor: pointer;
+  transition: 1s;
+  font-family: var(--main-font);
+}
+
+.btn-get:hover {
+  background-color: #ff6f00;
+}

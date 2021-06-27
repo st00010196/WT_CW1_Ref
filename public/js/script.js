@@ -5,13 +5,14 @@
 // selecting a send button
 const sendButton = document.querySelector(".btn-send");
 const chatHistory = document.querySelector(".chat-history");
+const messageBox = document.getElementById("message-text");
 //
 
 // execute the following lines of code only on the contacts page
 if (document.getElementById("contacts")) {
   sendButton.addEventListener("click", () => {
     // getting user's text from the textarea
-    let message = document.getElementById("message-text").value;
+    let message = messageBox.value;
 
     // creating a p teg with the message from textarea
     if (!(message.trim().length < 2)) {
@@ -115,5 +116,17 @@ if (document.querySelector(".form")) {
       alert("Phone number format is incorrect for our region");
       e.preventDefault();
     }
+  });
+}
+
+// prices page messages to users
+const btnsBuy = document.querySelectorAll(".btn-get");
+
+if (document.querySelector(".price-main")) {
+  btnsBuy[0].addEventListener("click", () => {
+    alert("Thank you for premium subscription! You may now enjoy our app with no restrictions :)");
+  });
+  btnsBuy[1].addEventListener("click", () => {
+    alert("Thank you for gold subscription! Enjoy unlimited messages :)");
   });
 }
